@@ -7,9 +7,9 @@
       copy:
         src: "/var/snap/jenkins/4829/workspace/webapp/target/MymavenWebApp01.war"
         dest: "/opt/tomcat/webapps/MymavenWebApp01.war"
-        remote_src: no
+        remote_src: yes
 
     - name: Restart Tomcat
       systemd:
-        name: tomcat
-        state: restarted
+        name: tomcat9  # Change this based on actual service name
+        state: restarted
