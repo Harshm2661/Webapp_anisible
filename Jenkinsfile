@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/Hemavathipcse/MavenWebAppIntegration.git'
+                git branch: 'master', url: 'https://github.com/Harshm2661/Webapp_anisible.git'
             }
         }
 
@@ -47,8 +47,4 @@ pipeline {
             echo 'Build and deployment successful!'
         }
         failure {
-            echo 'Build failed!'
-        }
-    }
-}
-
+            echo 'Build failed!'}}}
